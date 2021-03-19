@@ -1,0 +1,112 @@
+/* black header on the top */
+.toprect{
+    position: fixed;
+    width: 100%;
+    height: 9%;
+    left: 0px;
+    top: 0px;
+    background: #494949;
+}
+/* for signout button*/
+#signout{
+    position: fixed;
+    width: 80px;
+    height: 26px;
+    left: 90%;
+    top: 14px;
+    background: #DA4242;
+    border-radius: 12px;
+    color:#000000;
+    outline:none;
+}
+#backbutton{
+  position: fixed;
+  width: 80px;
+  height: 26px;
+  left: 4%;
+  top: 14px;
+  background: #DA4242;
+  border-radius: 12px;
+  color:#000000;
+  outline:none;
+}
+/* Form -meaning blue box on the right*/
+#form{
+    position: absolute;
+    width:50% ;
+    height: 80%;
+    left: 40%;
+    top: 15%;
+    background: #D5E8F3;
+    border-radius: 26px;
+}
+#submit{
+
+    position: absolute;
+    width: 90px;
+    height: 28px;
+    left: 80%;
+    top: 90%;
+    outline: none;
+    background: rgba(239, 248, 253, 0.9);
+    border-radius: 12px;
+
+}
+#clear{
+
+    position: absolute;
+    width: 90px;
+    height: 28px;
+    left: 60%;
+    top: 90%;
+    outline: none;
+    background: rgba(239, 248, 253, 0.9);
+    border-radius: 12px;
+
+}
+/*for the blue box on the left*/
+#form_info{
+    text-align:center;
+    position: absolute;
+    width: 30%;
+    height: 80%;
+    left: 5%;
+    top: 15%;
+    background: #D5E8F3;
+    border-radius: 26px;
+
+}
+/*whenever text is enclosed within any blue box use this class with a div,text looks cleaner*/
+.container{
+    top: 5%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    text-align: left;
+    position: relative;
+}
+  /*below are css elements for stars, DO NOT CHANGE ANYTHING*/
+  .rating-css input {
+    display: none;
+  }
+  .rating-css input + label {
+    font-size: 20px;
+    text-shadow: 1px 1px 0 #ffe400;
+    cursor: pointer;
+    color: #EECC17;
+  }
+  .rating-css input:checked + label ~ label {
+    color: #838383;
+  }
+  .rating-css label:active {
+    transform: scale(0.8);
+    transition: 0.3s ease;
+  }
+  .comment{
+    width: 90%;
+    height: 60px;
+    left:45%;
+    top:85%;
+  }
+  
+  

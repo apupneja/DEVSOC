@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet"  type="text/css" href="design.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+        <title>Form</title>
+    </head>
+    <body background="../ripples.png">
+        <div class="toprect">
+            <button id="signout" onclick="windows.location.href='#';">Sign Out</button>
+            <button id="backbutton" onclick="windows.location.href='#';">Back</button>
+        </div>
+
+        <div id="form">
+            <div class="container"><!-- container is to be used to enclose text, text looks cleaner when it is enclosed inside this element-->
+                <div class="rating-css">
+                    <div><!-- If u want to add new teachers then just copy paste this whole div tag along with the br,hr tags-->
+                        <span>Teacher 1</span>
+                        <span class="star-icon">
+                            <input type="radio" name="rating1" id="rating1">
+                            <label for="rating1" class="fa fa-star"></label>
+                            <input type="radio" name="rating1" id="rating2">
+                            <label for="rating2" class="fa fa-star"></label>
+                            <input type="radio" name="rating1" id="rating3">
+                            <label for="rating3" class="fa fa-star"></label>
+                            <input type="radio" name="rating1" id="rating4">
+                            <label for="rating4" class="fa fa-star"></label>
+                            <input type="radio" name="rating1" id="rating5">
+                            <label for="rating5" class="fa fa-star"></label>
+                        </span>
+                    </div>
+                
+                    <br>
+                    <hr>
+                    
+                    <div>
+                        <span>Teacher 2</span>
+                        <span class="star-icon">
+                            <input type="radio" name="rating2" id="rate1">
+                            <label for="rate2" class="fa fa-star"></label>
+                            <input type="radio" name="rating2" id="rate2">
+                            <label for="rate2" class="fa fa-star"></label>
+                            <input type="radio" name="rating2" id="rate3">
+                            <label for="rate3" class="fa fa-star"></label>
+                            <input type="radio" name="rating2" id="rate4">
+                            <label for="rate4" class="fa fa-star"></label>
+                            <input type="radio" name="rating2" id="rate5">
+                            <label for="rate5" class="fa fa-star"></label>
+                        </span>
+                    </div>
+                    <br>
+                    <hr>
+                </div>
+                
+                <form action="" method="">
+                    <textarea class="comment">Any comments about the faculty/subject in general?</textarea>
+                    <br>
+                </form>
+            </div>
+             
+            
+            <button id="submit" onclick="windows.location.href='#';">Submit</button>
+            <button id="clear" onclick="windows.location.href='#';">Clear</button>
+        </div>
+        <div id="form_info">
+         <div class="container">
+            <h1>Guidelines</h1>
+         </div>
+        </div>
+        
+    </body>
+</html> 
