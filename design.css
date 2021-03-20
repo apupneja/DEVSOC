@@ -1,34 +1,43 @@
+html {
+  background: url(cool-background.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 /* black header on the top */
-.toprect{
-    position: fixed;
-    width: 100%;
-    height: 9%;
-    left: 0px;
-    top: 0px;
-    background: #494949;
+.navbar {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  left: 0px;
+  top: 0;
+
+  color: #494949;
+  z-index: 1;
 }
 /* for signout button*/
+
 #signout{
-    position: fixed;
-    width: 80px;
-    height: 26px;
-    left: 90%;
-    top: 14px;
-    background: #DA4242;
-    border-radius: 12px;
-    color:#000000;
-    outline:none;
-}
-#backbutton{
-  position: fixed;
+  position: absolute;
   width: 80px;
   height: 26px;
-  left: 4%;
-  top: 14px;
-  background: #DA4242;
+  right: 5%;
+  top: 12px;
+  outline: none;
+  background: rgb(250, 37, 37);
   border-radius: 12px;
-  color:#000000;
-  outline:none;
+}
+
+#back {
+  position: absolute;
+  width: 80px;
+  height: 26px;
+  left: 5%;
+  top: 12px;
+  outline: none;
+  background: rgb(250, 47, 47);
+  border-radius: 12px;
 }
 /* Form -meaning blue box on the right*/
 #form{
@@ -48,7 +57,7 @@
     left: 80%;
     top: 90%;
     outline: none;
-    background: rgba(239, 248, 253, 0.9);
+    background: rgb(250, 37, 37);
     border-radius: 12px;
 
 }
@@ -60,7 +69,7 @@
     left: 60%;
     top: 90%;
     outline: none;
-    background: rgba(239, 248, 253, 0.9);
+    background: rgb(250, 37, 37);
     border-radius: 12px;
 
 }
@@ -85,22 +94,8 @@
     text-align: left;
     position: relative;
 }
-  /*below are css elements for stars, DO NOT CHANGE ANYTHING*/
-  .rating-css input {
-    display: none;
-  }
-  .rating-css input + label {
-    font-size: 20px;
-    text-shadow: 1px 1px 0 #ffe400;
-    cursor: pointer;
-    color: #EECC17;
-  }
-  .rating-css input:checked + label ~ label {
-    color: #838383;
-  }
-  .rating-css label:active {
-    transform: scale(0.8);
-    transition: 0.3s ease;
+  .yellow{
+    color:yellow;
   }
   .comment{
     width: 90%;
@@ -108,5 +103,4 @@
     left:45%;
     top:85%;
   }
-  
   
