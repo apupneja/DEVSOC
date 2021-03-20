@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet"  type="text/css" href="design.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+        <title>Form</title>
+    </head>
+    <body>
+        <div class="navbar">
+            <button id="signout" onclick="windows.location.href='#';">Sign Out</button>
+            <button id="back" onclick="windows.location.href='#';">Back</button>
+        </div>
+        <script>
+            var stars1;
+            var stars2;
+            document.addEventListener('DOMContentLoaded', () => {
+                stars1 = document.querySelectorAll(".row1 span span ");
+                
+                stars1.forEach(item => {
+                    item.addEventListener('click', function () {
+                        var rating1 = this.getAttribute("data1");
+                        
+                        return SetRatingStar1(rating1, stars1);
+                        
+                    });
+                });
+            
+                stars2 = document.querySelectorAll(".row2 span span");
+                stars2.forEach(item => {
+                    item.addEventListener('click', function () {
+                        
+                        var rating2 = this.getAttribute("data2");
+                    
+                        return SetRatingStar2(rating2, stars2);
+                    });
+                });
+            });
+            
+            
+    /**
+    * SetRatingStar sets the rating on page
+    *
+    * @param {int} rating           Int of the rating value. 
+    * @returns {object} stars       html stars elements
+    *
+    */
+            function SetRatingStar1(rating1, stars1) {
+                var len = stars1.length;
+                console.log(rating1);
+    
+                for (var i = 0; i < len; i++) {
+                    if (i < rating1) {
+                        stars1[i].innerHTML = '<i class="fas fa-star yellow"></i>';
+                    } else {
+                        stars1[i].innerHTML = '<i class="far fa-star"></i>';
+                    }
+                }
+    
+            };
+            
+            function SetRatingStar2(rating2, stars2) {
+                var len = stars2.length;
+                console.log(rating2);
+    
+                for (var i = 0; i < len; i++) {
+                    if (i < rating2) {
+                        stars2[i].innerHTML = '<i class="fas fa-star yellow"></i>';
+                    } else {
+                        stars2[i].innerHTML = '<i class="far fa-star"></i>';
+                    }
+                }
+    
+            };
+            
+        </script>
+
+        <div id="form">
+            <div class="container"><!-- container is to be used to enclose text, text looks cleaner when it is enclosed inside this element-->
+                
+                    <div><!-- If u want to add new teachers then just copy paste this whole div tag along with the br,hr tags-->
+                        <span>Teacher 1</span>
+                        <span class="row1">
+                        <span class="star-icon">
+                
+                            <span data1="1"><i class="far fa-star"></i></span>
+                            <span data1="2"><i class="far fa-star"></i></span>
+                            <span data1="3"><i class="far fa-star"></i></span>
+                            <span data1="4"><i class="far fa-star"></i></span>
+                            <span data1="5"><i class="far fa-star"></i></span>
+                        </span>
+                        </span>
+                    </div>
+                
+                    <br>
+                    <hr>
+                    
+                    <div><!-- If u want to add new teachers then just copy paste this whole div tag along with the br,hr tags-->
+                        <span>Teacher 2</span>
+                        <span class="row2">
+                        <span class="star-icon">
+                          
+                            <span data2="1"><i class="far fa-star"></i></span>
+                            <span data2="2"><i class="far fa-star"></i></span>
+                            <span data2="3"><i class="far fa-star"></i></span>
+                            <span data2="4"><i class="far fa-star"></i></span>
+                            <span data2="5"><i class="far fa-star"></i></span>
+                          
+                        </span>
+                        </span>
+                      
+                    </div>
+                
+                    <br>
+                    <hr>
+                    
+                    <form action="" method="">
+                        <textarea class="comment">Any comments about the faculty/subject in general?</textarea>
+                        <br>
+                    </form> 
+            
+                
+                    
+            </div>
+             
+            
+            <button id="submit" onclick="windows.location.href='#';">Submit</button>
+            <button id="clear" onclick="windows.location.href='#';">Clear</button>
+        </div>
+        <div id="form_info">
+            <div class="container">
+               <h1>Guidelines</h1>
+               <p>In the form, fill out the ratings for the profs you have been taught by in lecture, tutorials or lab sections. </p>
+               <p>A text box has been to put up to enter any advice you might have for the course.</p>
+            </div>
+           </div>
+        
+    </body>
+</html>
